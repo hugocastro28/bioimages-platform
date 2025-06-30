@@ -1,4 +1,4 @@
-![final-look-expanded-cut](https://github.com/user-attachments/assets/dd667102-8771-43a9-bd17-1a52cdd18ab4)
+![full_screen_2](https://github.com/user-attachments/assets/93e50369-3a71-4194-afb6-d94bfe72ef0b)
 
 # Bioimages Platform
 
@@ -8,5 +8,5 @@ Here is the link for the platform: https://echoimages.labs.wikimedia.pt
 
 ### Landing Page
 
-![final-look-initial](https://github.com/user-attachments/assets/5ed43a58-f950-48a0-9ef2-a5b6c77bbcf4)
+![landing_page](https://github.com/user-attachments/assets/2fce420e-d5f4-4504-9377-6c7b4f09a596)
 
