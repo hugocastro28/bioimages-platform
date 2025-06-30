@@ -1,0 +1,18 @@
+services:
+  bioimages:
+    build: .
+    container_name: bioimages-app
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.bioimages.rule=Host(`echoimages.labs.wikimedia.pt`)"
+      - "traefik.http.routers.bioimages.entrypoints=websecure"
+      - "traefik.http.routers.bioimages.tls=true"
+      - "traefik.http.routers.bioimages.tls.certresolver=letsencrypt"
+    networks:
+      - wikibase-network-1
+    restart: unless-stopped
+
+networks:
+  wikibase-network-1:
+    external: true
+    name: wikibase-network-1

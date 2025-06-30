@@ -1,0 +1,17 @@
+.header {
+    padding: 1em 1.5em 0em 1.5em;
+    display: grid;
+}
+
+.header img {
+    max-width: 200px;
+}
+
+.header h1 a {
+    color: rgb(153, 8, 8);
+}
+
+.header .nav-links a {
+    color: rgb(153, 8, 8);
+    font-size: 1.2em;
+}

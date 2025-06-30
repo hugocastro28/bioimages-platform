@@ -1,0 +1,34 @@
+.footer {
+    padding: 0em 1.5em 0em 1.5em;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+
+.footer .wiki-project {
+    margin-right: 1em;
+    color: var(--third-color);
+}
+
+.footer .wiki-project:hover {
+    color: var(--third-color);
+    text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+    .footer .nav-links .wiki-project {
+        color: #f0f0f0;
+    }
+
+    .footer .nav-links .wiki-project:hover {
+        color: #f0f0f0;
+    }
+}
+
+.footer .ei_logo {
+    max-width: 20px;
+}

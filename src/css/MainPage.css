@@ -1,0 +1,323 @@
+.menu-content {
+  padding: 0em 2em 0em 2em;
+  display: grid;
+  grid-template-columns: 1fr 6fr 1.5fr;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1em;
+}
+
+.menu > div {
+  min-height: 160px;
+  max-height: 200px; /* full section height */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.menu h3 {
+  width: 100%;
+  text-align: end;
+  margin-bottom: 0.5em;
+  border-bottom: 2px solid var(--second-color);
+}
+
+.scrollable-content {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  overflow-y: auto;
+  margin-top: 8px;
+  flex: 1;
+}
+
+.scrollable-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+  background: lightgray;
+  border-radius: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .scrollable-content::-webkit-scrollbar-thumb {
+    background: #333;
+  }
+}
+
+.scrollable-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+@media (prefers-color-scheme: dark) {
+  .scrollable-content::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+.menu button {
+  margin-right: 5px;
+  font-size: 17px;
+  font-weight: 450;
+  background: none;
+  background-color: none;
+  padding-right: 0;
+  outline: none;
+  transition: color 0.2s;
+}
+
+.menu button:hover {
+  color: var(--second-color);
+  font-weight: 500;
+  border: 1px solid transparent;
+}
+
+.menu button:focus {
+  border: 1px solid transparent;
+}
+
+.menu button:active {
+  color: var(--second-color);
+  border: 1px solid transparent;
+}
+
+.menu .menu-active {
+  color: var(--second-color);
+  font-weight: 600;
+}
+
+.menu .menu-inactive {
+  color: #1A1A1A;
+}
+
+@media (prefers-color-scheme: dark) {
+  .menu .menu-inactive {
+    color: #f0f0f0;
+  }
+}
+
+/** SEARCH BOX */
+.search-box {
+  margin-left: 5px;
+  position:relative;
+}
+
+.search-box .search-box-buttons {
+  margin-left: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.search-box button {
+  border-radius: 0px;
+  font-weight: 450;
+  background-color: lightgray;
+  border: none;
+  border-top: 2px solid transparent;
+  outline: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .search-box button {
+    background-color: #1A1A1A;
+  }
+}
+
+.search-box button:hover {
+  border-top: 2px solid var(--second-color);
+}
+
+.search-box .search-active {
+  border-top: 2px solid var(--second-color);
+  font-weight: 500;
+}
+
+.search-box .search-inactive {
+  border-top: 2px solid transparent;
+}
+
+.search-box input {
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #1A1A1A;
+  font-size: 14px;
+  width: 90%;
+  transition: all 0.2s ease-out;
+}
+
+.search-box input:focus {
+  outline: none;
+  border-bottom: 1px solid var(--second-color);
+}
+
+.search-box .results-container {
+  margin-top: 10px;
+  padding: 5px 5px 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-height: 650px;
+  overflow-y: auto;
+}
+
+.search-box .property-box {
+  padding: 6px 8px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  border: 3px solid transparent;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 60px;
+  max-width: 250px;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.search-box .property-box.selected {
+  background: lightgray;
+}
+
+@media (prefers-color-scheme: dark) {
+  .search-box .property-box.selected {
+    background: #1A1A1A;
+  }
+}
+
+.search-box .property-box:hover {
+  background: lightgray;
+}
+
+@media (prefers-color-scheme: dark) {
+  .search-box .property-box:hover {
+    background: #1A1A1A;
+  }
+}
+
+.search-box .property-box:active {
+  border: 3px solid var(--second-color);
+}
+
+.search-box .tooltip-property {
+  font-weight: normal;
+  max-width: 250px;
+  z-index: 999;
+}
+
+.search-box .results-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.search-box .results-container::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .search-box .results-container::-webkit-scrollbar-track {
+    background: #1A1A1A;
+  }
+}
+
+.search-box .results-container::-webkit-scrollbar-thumb {
+  background: lightgray;
+  border-radius: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .search-box .results-container::-webkit-scrollbar-thumb {
+    background: #333;
+  }
+}
+
+.search-box .results-container::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+@media (prefers-color-scheme: dark) {
+  .search-box .results-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+.search-box .button-container {
+  margin-left: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-box .clear-button {
+  width: 100%;
+  font-weight: 400;
+  background-color: lightgray;
+  border: 1px solid transparent;
+  letter-spacing: 0.5px;
+  transition: all 0.2s;
+}
+
+@media (prefers-color-scheme: dark) {
+  .search-box .clear-button {
+    background-color: #1A1A1A;
+  }
+}
+
+.search-box .clear-button:hover {
+  border: 1px solid var(--second-color);
+}
+
+/** SLIDER **/
+.slider-container {
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.slider-container .slider {
+  flex: 1;
+  min-width: 0;
+}
+
+.slider .rc-slider-handle {
+  background-color: white;
+  height: 22px;
+  width: 10px;
+  border: solid 2px black !important;
+  border-radius: 25%;
+  opacity: 1;
+  margin-top: -10px;
+  box-shadow: none !important;
+}
+
+.slider .rc-slider-track {
+  background-color: rgb(153, 8, 8) !important;
+  box-shadow: none !important;
+}
+
+.slider .rc-slider-handle:active {
+  border-color: rgb(153, 8, 8);
+  box-shadow: none !important;
+}
+
+.slider .rc-slider-handle:focus-visible {
+  border-color: rgb(153, 8, 8);
+  box-shadow: none !important;
+}
+
+.slider-container .year-range {
+  font-weight: 500;
+}
