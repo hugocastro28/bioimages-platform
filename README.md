@@ -15,11 +15,13 @@ This project constitutes the prototype developed within the scope of the masterâ
 
 **Master's Program**: Informatics and Computing Engineering
 
+
 ## Author
 
 **Name**: [Hugo Reis de Castro](https://www.linkedin.com/in/hugocastro28/)
 
 **Student ID**: up202006770
+
 
 ## Supervisors
 
@@ -27,9 +29,15 @@ This project constitutes the prototype developed within the scope of the masterâ
 
 **Co-supervisor**: [Alexandre Valle](https://orcid.org/0000-0001-6426-8864)
 
+
 ## Development Period
 
-**Date**: September 2024 - July 2025
+September 2024 - July 2025
+
+
+## Dissertation Document
+
+[Disseration (PDF)](./bioimages-platform_202006770.pdf)
 
 ## Site
 
