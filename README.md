@@ -25,9 +25,9 @@ This project constitutes the prototype developed within the scope of the masterâ
 
 ## Supervisors
 
-**Supervisor**: [Tiago Assis](https://orcid.org/0000-0002-4345-6222)
+**Supervisor**: [Tiago Assis](https://orcid.org/0000-0001-6426-8864)
 
-**Co-supervisor**: [Alexandre Valle](https://orcid.org/0000-0001-6426-8864)
+**Co-supervisor**: [Alexandre Valle](https://orcid.org/0000-0002-4345-6222)
 
 
 ## Development Period
